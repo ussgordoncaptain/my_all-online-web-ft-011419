@@ -7,5 +7,9 @@ def my_all?(collection)
    final <<  yield(collection[ii])
     i +=1
   end
-  return final
+ if storage.include?(false)
+    return false
+  else
+    return true 
+  end
 end
